@@ -1,0 +1,68 @@
+/* Стиль для главного окна */
+QMainWindow {
+    background-color: #EEE;
+}
+
+/* Стиль для текстового поля */
+QPlainTextEdit {
+    background-color: #FFF;
+    color: #000;
+    border: 2px solid #767;
+    font-size: 25.5px;
+    font-family: "Arial", sans-serif;
+}
+
+/* Стиль для всего меню-бара */
+QMenuBar {
+    background-color: #FFF;
+    color: #000;
+}
+
+/* Стиль для отдельного пункта меню (Файл, Правка...) */
+QMenuBar::item {
+    background-color: transparent;
+}
+
+/* Стиль для пункта меню при его выборе */
+QMenuBar::item:selected {
+    background-color: #EEE;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+}
+
+/* Стиль для выпадающего меню */
+QMenu {
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #767;
+}
+
+/* Стиль для пунктов в выпадающем меню при наведении */
+QMenu::item:selected {
+    background-color: #EEE;
+    border: 1px solid #EEE;
+    border-radius: 4px;
+}
+
+/* Стиль для кнопок */
+QPushButton {
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 11.6pt;
+    font-family: "Arial", sans-serif;
+}
+
+/* Стиль для кнопок при наведении мыши */
+QPushButton:hover {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}
+
+/* Стиль для кнопок при клике мышки */
+QPushButton:pressed {
+    border: 2px solid #156AAB;
+    border-radius: 10px;
+}

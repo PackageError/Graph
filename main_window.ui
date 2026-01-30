@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Graph</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QPlainTextEdit" name="inputList">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="plainText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="plotButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Построить</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="helpMenu">
+    <property name="title">
+     <string>Помощь</string>
+    </property>
+    <addaction name="syntax_rules"/>
+    <addaction name="file_rules"/>
+   </widget>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="newFileAction"/>
+    <addaction name="loadAction"/>
+    <addaction name="saveAction"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Оформление</string>
+    </property>
+    <addaction name="lightTheme"/>
+    <addaction name="darkTheme"/>
+   </widget>
+   <addaction name="helpMenu"/>
+   <addaction name="fileMenu"/>
+   <addaction name="menu"/>
+  </widget>
+  <action name="syntax_rules">
+   <property name="text">
+    <string>Правила записи функций и множеств точек</string>
+   </property>
+  </action>
+  <action name="loadAction">
+   <property name="text">
+    <string>Загрузить файл</string>
+   </property>
+  </action>
+  <action name="saveAction">
+   <property name="text">
+    <string>Сохранить файл</string>
+   </property>
+  </action>
+  <action name="exportAction">
+   <property name="text">
+    <string>Экспорт в формате .png</string>
+   </property>
+  </action>
+  <action name="newFileAction">
+   <property name="text">
+    <string>Новый файл</string>
+   </property>
+  </action>
+  <action name="file_rules">
+   <property name="text">
+    <string>Правила записи имён файлов</string>
+   </property>
+  </action>
+  <action name="lightTheme">
+   <property name="text">
+    <string>Светлая тема</string>
+   </property>
+  </action>
+  <action name="darkTheme">
+   <property name="text">
+    <string>Тёмная тема</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
